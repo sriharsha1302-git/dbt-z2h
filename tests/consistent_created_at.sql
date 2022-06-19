@@ -8,3 +8,4 @@ SELECT *
 FROM reviews
 JOIN listings ON (listings.listing_id = reviews.listing_id)
 WHERE listings.created_at > reviews.review_date
+LIMIT 10
